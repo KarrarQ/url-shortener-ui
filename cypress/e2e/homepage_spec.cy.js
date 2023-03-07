@@ -16,7 +16,7 @@ describe('Homepage flow', () => {
       it('user can view the form with proper inputs', () => {
         cy.get('[placeholder="Title..."]').should('exist')
         cy.get('[placeholder="URL to Shorten..."]').should('exist')
-        cy.get('[placeholder="URL to Shorten..."]').should('exist')
+        cy.get('button').should('exist')
       })
       it('user can fill out the form, information is reflected in the input fields', () => {
         cy.get('[placeholder="Title..."]').type('Karrar The Great')
